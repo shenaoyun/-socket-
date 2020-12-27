@@ -59,7 +59,7 @@ class ClientReadAndPrint extends Thread{
 		public void actionPerformed(ActionEvent event) {
 			userName = textField.getText();
 			String userPwd = String.valueOf(pwdField.getPassword());  // getPassword方法获得char数组
-			if(userName.length() >= 1 && userPwd.equals("123456")) {  // 密码为123并且用户名长度大于等于1
+			if(userName.length() >= 1 && userPwd.equals("123456")) {  // 密码为123456并且用户名长度大于等于1
 				chatView = new ChatView(userName);  // 新建聊天窗口,设置聊天窗口的用户名（静态）
 				// 建立和服务器的联系
 				try {

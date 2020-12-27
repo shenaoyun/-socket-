@@ -45,7 +45,7 @@ public class ClientFileThread extends Thread{
 					if(!userFile.exists()) {  // 新建当前用户的文件夹
 						userFile.mkdir();
 					}
-					File file = new File("C:\\接受文件\\" + userName + "\\"+ textName);
+					File file = new File("F:\\接受文件\\" + userName + "\\"+ textName);
 					fileWriter = new DataOutputStream(new FileOutputStream(file));
 					while((length = fileIn.read(buff)) > 0) {  // 把文件写进本地
 						fileWriter.write(buff, 0, length);
